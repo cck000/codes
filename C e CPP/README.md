@@ -1,0 +1,1 @@
+# Os arquivos tem extenção cpp mas são codigos em c com apenas a sintaxe do cpp
