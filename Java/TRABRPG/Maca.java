@@ -1,0 +1,9 @@
+public abstract class Maca extends ArmaClerigo{
+
+    Maca() {
+        super("Maça", 0.4);
+        
+
+    }
+    
+}
