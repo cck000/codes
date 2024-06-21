@@ -1,4 +1,4 @@
-public abstract class Maca extends ArmaClerigo{
+public  class Maca extends ArmaClerigo{
 
     Maca() {
         super("Maça", 0.4);
