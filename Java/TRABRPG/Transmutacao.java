@@ -1,7 +1,7 @@
 public class Transmutacao extends ArmaMago{
 
     Transmutacao() {
-        super("Transmutação", 0.25);
+        super("Magia da Transmutação", 0.25);
        
     }
     
