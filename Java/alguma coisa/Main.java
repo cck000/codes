@@ -14,7 +14,8 @@ public class Main {
         while (roda != null){
             
             
-            roda = JOptionPane.showInputDialog(new JFrame(), "Insira a operação que deseja realizar","Sistema de hotel", 1, null, new Object[]{"LISTAR APARTAMENTOS", "CADASTRAR RESERVA"}, null);
+            roda = JOptionPane.showInputDialog(new JFrame(), "Insira a operação que deseja realizar","Sistema de hotel", 1, null, new Object[]{"LISTAR APARTAMENTOS", "CADASTRAR RESERVA", "REMOVER RESERVA"}, null);
+            
             if (roda == null){
                 break;
             }
@@ -22,6 +23,11 @@ public class Main {
 
                 
                 case "CADASTRAR RESERVA":
+
+                    if (cliente.listaLivres().isEmpty()){
+                        JOptionPane.showMessageDialog(null, "Não há apartamentos livres", "Sistema de hotel", JOptionPane.WARNING_MESSAGE);
+                        break;
+                    }
                     int numeroap = (int)JOptionPane.showInputDialog(null, "Escolha o apartamento","Sistema de hotel", 1, null, cliente.listaLivres().toArray(), null );
                     int diasreserva = Integer.parseInt((String)JOptionPane.showInputDialog(new JFrame(), "Insira a quantitade de dias", "Sistema de hotel", 1, null, null, null));
                     cliente.novaReserva(numeroap, diasreserva);
@@ -42,7 +48,19 @@ public class Main {
                         }
                     }
                     JOptionPane.showMessageDialog(new JFrame(),temp.toArray(),"Sistema de hotel", JOptionPane.INFORMATION_MESSAGE, null);
+                    break;         
+                case "REMOVER RESERVA":
+                ArrayList<Integer> temp2 = new ArrayList<>();
+                for(Apartamento i : cliente.listaAp()){
+            
+                    if(i.getOcupado()){
 
+                        temp2.add(i.numAp);
+
+                    }
+                }
+                JOptionPane.showMessageDialog(new JFrame(),temp2.toArray(),"Sistema de hotel", JOptionPane.INFORMATION_MESSAGE, null);
+                break; 
 
 
                 default:

@@ -10,9 +10,7 @@ public class Hotel {
         for (int i = 0; i < 11; i++){
             this.ap[i] = new Apartamento(false, 0 ,i);
         
-        }
-
-        
+        } 
     }
     public ArrayList<Apartamento> listaAp(){
 
@@ -36,18 +34,23 @@ public class Hotel {
         }
         return temp;
     }
-    public String novaReserva(int numAp, int dias){
+
+
+    public void novaReserva(int numAp, int dias){
         if (!ap[numAp].getOcupado()){
 
             ap[numAp].setReserva(dias);
-            ap[numAp].setOcupado(true);
+            ap[numAp].setOcupado();
 
-            return "SUCESS";
-        }else{
-            return "APARTAMENTO "+numAp+" JÁ ESTÁ OCUPADO";
+        } 
+    }
+
+    public void removeReserva(int numAp){
+        if (ap[numAp].getOcupado()){
+
+            ap[numAp].setLivre();
+
         }
-
-        
     }
         
 
