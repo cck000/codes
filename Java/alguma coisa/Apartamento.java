@@ -1,5 +1,4 @@
 
-
 public class Apartamento {
     public int numAp;
     private boolean ocupado;
@@ -18,8 +17,8 @@ public class Apartamento {
         return ocupado;
     }
 
-    public void setOcupado(boolean ocupado) {
-        this.ocupado = ocupado;
+    public void setOcupado() {
+        this.ocupado = true;
     }
 
     public int getReserva() {
@@ -28,5 +27,10 @@ public class Apartamento {
 
     public void setReserva(int reserva) {
         this.reserva = reserva;
+    }
+
+
+    public void setLivre() {
+        this.ocupado = false;
     }
 }
