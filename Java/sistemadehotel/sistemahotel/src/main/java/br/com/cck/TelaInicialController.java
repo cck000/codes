@@ -31,14 +31,14 @@ public class TelaInicialController {
     
     @FXML
 
-    private void EditarApartamentos() throws IOException{
+    private void editarApartamentos() throws IOException{
         App.setRoot("FXMLEditar");
 
     }
     
     @FXML
 
-    private void BuscarApartamentos() throws IOException{
+    private void buscarApartamentos() throws IOException{
         App.setRoot("FXMLLBuscar");
 
     }

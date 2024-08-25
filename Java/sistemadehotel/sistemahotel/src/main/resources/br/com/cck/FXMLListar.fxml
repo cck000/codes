@@ -14,11 +14,14 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <TableView fx:id="tabelaap" editable="true" layoutX="73.0" layoutY="168.0" prefHeight="483.0" prefWidth="918.0">
+      <TableView fx:id="tabelaap" layoutX="73.0" layoutY="88.0" prefHeight="563.0" prefWidth="1167.0">
         <columns>
-          <TableColumn fx:id="numap" prefWidth="93.0" text="Apartamento" />
-          <TableColumn fx:id="estadoap" minWidth="0.0" prefWidth="120.0" text="Estado" />
-            <TableColumn fx:id="diasres" prefWidth="75.0" text="Dias" />
+          <TableColumn fx:id="numap" prefWidth="121.0" text="Apartamento" />
+          <TableColumn fx:id="estadoap" minWidth="0.0" prefWidth="88.0" text="Estado" />
+            <TableColumn fx:id="diasres" prefWidth="89.0" text="Dias" />
+            <TableColumn fx:id="tabnome" prefWidth="530.0" text="Nome" />
+            <TableColumn fx:id="tabtel" prefWidth="111.0" text="Celular" />
+            <TableColumn prefWidth="227.0" text="Ação" />
         </columns>
       </TableView>
       <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" AnchorPane.rightAnchor="1218.0" />
