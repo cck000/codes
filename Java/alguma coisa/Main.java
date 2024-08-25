@@ -59,7 +59,15 @@ public class Main {
 
                     }
                 }
-                JOptionPane.showMessageDialog(new JFrame(),temp2.toArray(),"Sistema de hotel", JOptionPane.INFORMATION_MESSAGE, null);
+                if(temp2.size()>0){
+                    int numeroap2 = (int)JOptionPane.showInputDialog(null, "Escolha a reserva  a ser removida","Sistema de hotel", JOptionPane.QUESTION_MESSAGE, null, temp2.toArray(), null );
+                    cliente.removeReserva(numeroap2);
+
+
+                }else{
+                    JOptionPane.showMessageDialog(new JFrame(),"Não há reservas cadastradas","Sistema de hotel", JOptionPane.ERROR_MESSAGE, null);
+                }
+
                 break; 
 
 
