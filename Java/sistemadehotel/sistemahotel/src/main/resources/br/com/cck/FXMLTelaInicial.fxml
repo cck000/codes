@@ -18,11 +18,9 @@
       </ImageView>
       <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="1280.0">
         <items>
-          <Button mnemonicParsing="false" onAction="#listarApartamentos" prefHeight="25.0" prefWidth="250.0" text="Listar apartamentos" />
-            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Adicionar reserva" />
-            <Button layoutX="141.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Remover reserva" />
-            <Button layoutX="272.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Editar reserva" />
-            <Button layoutX="403.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Buscar reserva" />
+          <Button mnemonicParsing="false" onAction="#listarApartamentos" prefHeight="25.0" prefWidth="420.0" text="Listar apartamentos" />
+            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#adicionarApartamentos" prefHeight="25.0" prefWidth="420.0" text="Adicionar reserva" />
+            <Button layoutX="403.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="420.0" text="Buscar reserva" />
         </items>
       </ToolBar>
       <Text blendMode="COLOR_BURN" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SISTEMA DE HOSPEDAGEM" textAlignment="CENTER" wrappingWidth="1280.0">

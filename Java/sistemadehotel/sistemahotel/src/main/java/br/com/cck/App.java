@@ -13,6 +13,12 @@ import java.io.IOException;
  */
 public class App extends Application {
 
+    private static Hotel hotel = new Hotel();
+
+    public static Hotel getHotel() {
+        return hotel;
+    }
+  
     private static Scene scene;
 
     @Override
@@ -34,6 +40,8 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+
+        Hotel h = new Hotel();
     }
 
 }

@@ -29,15 +29,20 @@ public class ListarController implements Initializable {
 
     @FXML
     private TableView<Apartamento> tabelaap;
-  
+    
+    @FXML
+    private TableColumn<Apartamento, String> tabnome;
+
+    @FXML
+    private TableColumn<Apartamento, String> tabtel;
+
+
+    Hotel temp = App.getHotel();
+
     ObservableList<Apartamento> listaap = FXCollections.observableArrayList(
 
-        new Apartamento("Ocupado", 3, 1),
-        new Apartamento("Ocupado", 4, 12),
-        new Apartamento("Ocupado", 2, 3),
-        new Apartamento("Ocupado", 12, 7),
-        new Apartamento("Ocupado", 33, 8),
-        new Apartamento("Livre", 0, 5)
+      
+        temp.listaAp()
 
     );
 
@@ -54,6 +59,8 @@ public class ListarController implements Initializable {
         diasres.setCellValueFactory( new PropertyValueFactory<Apartamento, Integer>("reserva"));
         estadoap.setCellValueFactory( new PropertyValueFactory<Apartamento, String>("ocupado"));
         numap.setCellValueFactory( new PropertyValueFactory<Apartamento, Integer>("numAp"));
+        tabnome.setCellValueFactory(new PropertyValueFactory<Apartamento, String>("nome"));
+        tabtel.setCellValueFactory(new PropertyValueFactory<Apartamento, String>("tel"));
 
         tabelaap.setItems(listaap);
         
