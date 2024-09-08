@@ -2,20 +2,19 @@ package br.com.cck;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.TreeSet;
 
-import javafx.beans.binding.StringBinding;
+
+
 
 public class Hotel {
 
     private Apartamento[] ap = new Apartamento[11];
-    private TreeSet<Apartamento> parv = new TreeSet<>();
+    
 
     public Hotel(){
 
         for (int i = 0; i < 11; i++){
-            this.ap[i] = new Apartamento("Livre", 0 ,i, "teste", "testudo", "000.000.000-00", "", "");
+            this.ap[i] = new Apartamento("Livre", 0 ,i, "", "", "", "", "");
         
         } 
     }
@@ -62,27 +61,22 @@ public class Hotel {
         }
     }
 
-    /* 
+    
 
-    public Apartamento buscaReserva(int num){
+    public ArrayList<Apartamento> buscaReserva(String cpf){
         
-        parv.addAll(Arrays.asList(ap));
-        
-        if(parv.contains(ap[num])){
+        ArrayList<Apartamento> temp = new ArrayList<>();
+        for (Apartamento i : ap){
 
-            return ap[num];
+            if (i.getCPF().equals(cpf) && !i.getCPF().equals("")){
+                temp.add(i);
 
-        }else{
-
-            return null;
+            }
         }
 
-
-
-        
-
+        return temp;
 
     }
-      */  
+      
 
 }

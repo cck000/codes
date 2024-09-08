@@ -33,7 +33,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button cache="true" contentDisplay="GRAPHIC_ONLY" layoutX="657.0" layoutY="1.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="42.0" style="-fx-background-color: transparent;" text="Buscar reserva">
+            <Button cache="true" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="657.0" layoutY="1.0" mnemonicParsing="false" onAction="#buscarApartamentos" prefHeight="32.0" prefWidth="42.0" style="-fx-background-color: transparent;" text="Buscar reserva">
                <graphic>
                   <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -41,7 +41,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-          <Button blendMode="SRC_ATOP" cache="true" contentDisplay="GRAPHIC_ONLY" graphicTextGap="1.0" layoutX="580.0" layoutY="3.0" mnemonicParsing="false" onAction="#listarApartamentos" prefHeight="35.0" prefWidth="36.0" style="-fx-background-color: trasparent;" text="Listar apartamentos">
+          <Button blendMode="SRC_ATOP" cache="true" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="580.0" layoutY="3.0" mnemonicParsing="false" onAction="#listarApartamentos" prefHeight="35.0" prefWidth="36.0" style="-fx-background-color: transparent;" text="Listar apartamentos">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -49,8 +49,14 @@
                      </image>
                   </ImageView>
                </graphic>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0" />
+               </effect>
             </Button>
          </children>
+         <effect>
+            <DropShadow />
+         </effect>
       </AnchorPane>
    </children>
 </AnchorPane>
