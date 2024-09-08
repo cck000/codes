@@ -39,7 +39,7 @@ public class TelaInicialController {
     @FXML
 
     private void buscarApartamentos() throws IOException{
-        App.setRoot("FXMLLBuscar");
+        App.setRoot("FXMLBuscar");
 
     }
     
