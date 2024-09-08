@@ -2,12 +2,15 @@ package br.com.cck;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.TreeSet;
 
 import javafx.beans.binding.StringBinding;
 
 public class Hotel {
 
     private Apartamento[] ap = new Apartamento[11];
+    private TreeSet<Apartamento> parv = new TreeSet<>();
 
     public Hotel(){
 
@@ -58,6 +61,28 @@ public class Hotel {
 
         }
     }
+
+    /* 
+
+    public Apartamento buscaReserva(int num){
         
+        parv.addAll(Arrays.asList(ap));
+        
+        if(parv.contains(ap[num])){
+
+            return ap[num];
+
+        }else{
+
+            return null;
+        }
+
+
+
+        
+
+
+    }
+      */  
 
 }
