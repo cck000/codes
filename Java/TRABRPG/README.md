@@ -1,3 +1,3 @@
 # Trabalho de Linguagem de programação orientada a objeto
 
-# Mini RPG inspirado no D&D
+## sistema de combates de um jogo de RPG inspirado no D&D
